@@ -3,12 +3,12 @@
         <div class="flex justify-between items-center py-0.5 mt-0 mb-0 h-full px-2">
             <!--left side-->
             <div class="flex items-center">
-                <button v-if="auth.authUser.value != null && auth.authUser.value.isAuthenticated"
+                <button
                     @click="toggleSidebar()" id="btnSidebar"
                     class="sm:mr-2 inline-flex items-center justify-center p-0 w-8 h-8 rounded-full text-gray-700 hover:text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                     title="Toggle sidebar">
-                    <KIconsBars3 v-if="!isCloseSidebar" class="h-5 w-5" title="Toggle sidebar" />
-                    <KIconsXmark v-if="isCloseSidebar" class="h-5 w-5 text-theme-1" title="Close sidebar" />
+                    <IconsKBars3Icon v-if="!isCloseSidebar" class="h-5 w-5" title="Toggle sidebar" />
+                    <IconsKXmarkIcon v-if="isCloseSidebar" class="h-5 w-5 text-theme-1" title="Close sidebar" />
                 </button>
                 <KClientApplicationMark/>
                 <div class="hidden sm:flex flex !items-center gap-1 sm:gap-4 items-center">
